@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Volumes/Development/sites/remix-jokes/app/routes/index.tsx?browser", "../../../app/routes/index.tsx"],
+  "sourcesContent": ["export { default } from \"/Volumes/Development/sites/remix-jokes/app/routes/index.tsx\";", "export default function IndexRoute() {\n  return <div>Hello I am the index route</div>;\n}"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAAe,sBAAsB;AACnC,SAAO,oCAAC,OAAD,MAAK;AAAA;",
+  "names": []
+}

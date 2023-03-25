@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Volumes/Development/sites/remix-jokes/app/routes/logout.tsx?browser", "../../../app/routes/logout.tsx"],
+  "sourcesContent": ["export { default } from \"/Volumes/Development/sites/remix-jokes/app/routes/logout.tsx\";", "import type { ActionFunction, LoaderFunction } from 'remix';\nimport { redirect } from 'remix';\nimport { logout } from '~/utils/session.server';\n\nexport let action: ActionFunction = async ({ request }) => {\n  return logout(request);\n};\n\nexport let loader: LoaderFunction = async () => {\n  return redirect('/');\n};\n\nexport default function Logout() {\n  return (\n    <Link to=\"new\" className=\"button\">\n      Add your own\n    </Link>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;AAAA;;;ACAA;AAEA,qBAAuB;AAUR,kBAAkB;AAC/B,SACE,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,IAAM,WAAU;AAAA,KAAS;AAAA;",
+  "names": []
+}

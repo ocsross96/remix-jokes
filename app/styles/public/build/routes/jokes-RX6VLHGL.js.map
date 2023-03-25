@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Volumes/Development/sites/remix-jokes/app/routes/jokes.tsx?browser", "../../../app/routes/jokes.tsx"],
+  "sourcesContent": ["export { default, links } from \"/Volumes/Development/sites/remix-jokes/app/routes/jokes.tsx\";", "import type { LinksFunction } from \"remix\";\nimport { Outlet, Link } from \"remix\";\n\nimport stylesUrl from \"../styles/jokes.css\";\n\nexport let links: LinksFunction = () => {\n  return [\n    {\n      rel: \"stylesheet\",\n      href: stylesUrl\n    }\n  ];\n};\n\nexport default function JokesRoute() {\n  return (\n    <div>\n      <h1>J\uD83E\uDD2AKES</h1>\n      <main>\n        <Outlet />\n      </main>\n    </div>\n  );\n}"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;;;;;;AAKO,IAAI,QAAuB,MAAM;AACtC,SAAO;AAAA,IACL;AAAA,MACE,KAAK;AAAA,MACL,MAAM;AAAA;AAAA;AAAA;AAKG,sBAAsB;AACnC,SACE,oCAAC,OAAD,MACE,oCAAC,MAAD,MAAI,kBACJ,oCAAC,QAAD,MACE,oCAAC,gCAAD;AAAA;",
+  "names": []
+}

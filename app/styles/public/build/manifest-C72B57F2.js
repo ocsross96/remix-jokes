@@ -1,0 +1,1 @@
+window.__remixManifest={"version":"c72b57f2","entry":{"module":"/build/entry.client-LAAPE63Q.js","imports":["/build/_shared/chunk-OJART57C.js"]},"routes":{"root":{"id":"root","path":"","module":"/build/root-B2ZK3SLV.js","hasAction":false,"hasLoader":false,"hasCatchBoundary":false,"hasErrorBoundary":false}},"url":"/build/manifest-C72B57F2.js"};

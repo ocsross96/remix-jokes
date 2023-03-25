@@ -1,0 +1,42 @@
+import {
+  require_db
+} from "/build/_shared/chunk-7ZXSSUSH.js";
+import {
+  React,
+  __toModule,
+  init_react,
+  useActionData
+} from "/build/_shared/chunk-CIAIWM7L.js";
+
+// browser-route-module:/Volumes/Development/sites/remix-jokes/app/routes/jokes/new.tsx?browser
+init_react();
+
+// app/routes/jokes/new.tsx
+init_react();
+var import_db = __toModule(require_db());
+function NewJokeRoute() {
+  var _a, _b, _c, _d;
+  let actionData = useActionData();
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", null, "Add your own hilarious joke"), /* @__PURE__ */ React.createElement("form", {
+    method: "post"
+  }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("label", null, "Name:", /* @__PURE__ */ React.createElement("input", {
+    type: "text",
+    defaultValue: (_a = actionData == null ? void 0 : actionData.fields) == null ? void 0 : _a.name,
+    name: "name",
+    "aria-invalid": Boolean((_b = actionData == null ? void 0 : actionData.fieldErrors) == null ? void 0 : _b.name) || void 0,
+    "aria-describedby": ((_c = actionData == null ? void 0 : actionData.fieldErrors) == null ? void 0 : _c.name) ? "name-error" : void 0
+  })), ((_d = actionData == null ? void 0 : actionData.fieldErrors) == null ? void 0 : _d.name) ? /* @__PURE__ */ React.createElement("p", {
+    className: "form-validation-error",
+    role: "alert",
+    id: "name-error"
+  }, actionData.fieldErrors.name) : null), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("label", null, "Content: ", /* @__PURE__ */ React.createElement("textarea", {
+    name: "content"
+  }))), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("button", {
+    type: "submit",
+    className: "button"
+  }, "Add"))));
+}
+export {
+  NewJokeRoute as default
+};
+//# sourceMappingURL=/build/routes/jokes/new-VAQALULF.js.map

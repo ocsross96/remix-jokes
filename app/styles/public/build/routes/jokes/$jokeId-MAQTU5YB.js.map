@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Volumes/Development/sites/remix-jokes/app/routes/jokes/$jokeId.tsx?browser", "../../../../app/routes/jokes/$jokeId.tsx"],
+  "sourcesContent": ["export { default } from \"/Volumes/Development/sites/remix-jokes/app/routes/jokes/$jokeId.tsx\";", "import type { LoaderFunction } from \"remix\";\nimport { Link, useLoaderData } from \"remix\";\nimport type { Joke } from \"@prisma/client\";\nimport { db } from \"~/utils/db.server\";\n\ntype LoaderData = { joke: Joke };\n\nexport let loader: LoaderFunction = async ({ params }) => {\n  let joke = await db.joke.findUnique({\n    where: { id: params.jokeId }\n  });\n  if (!joke) throw new Error(\"Joke not found\")\n}\n\nexport default function JokeRoute() {\n  return (\n    <div>\n      <p>Here's your hilarious joke:</p>\n      <p>\n        Why don't you find hippopotamuses hiding in trees?\n        They're really good at it.\n      </p>\n    </div>\n  );\n}"],
+  "mappings": ";;;;;;;;;;AAAA;;;ACAA;AAGA,gBAAmB;AAWJ,qBAAqB;AAClC,SACE,oCAAC,OAAD,MACE,oCAAC,KAAD,MAAG,gCACH,oCAAC,KAAD,MAAG;AAAA;",
+  "names": []
+}

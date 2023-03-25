@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Volumes/Development/sites/remix-jokes/app/routes/logout.tsx?browser"],
+  "sourcesContent": ["export * from \"/Volumes/Development/sites/remix-jokes/app/routes/logout.tsx\";"],
+  "mappings": ";;;;;AAAA;",
+  "names": []
+}
